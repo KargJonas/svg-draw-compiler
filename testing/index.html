@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <svg width="500" height="500"></svg>
+  <script src="./../build/bundle.js"></script>
+  <script>
+    document.querySelector("svg").innerHTML = Compiler(`
+    line 0 100 300 100
+    line 0 200 300 200
+    line 100 0 100 300
+    line 200 0 200 300
+
+    circle 50 50 30
+    circle 150 50 30
+
+    line 230 230 270 270
+    line 270 230 230 270
+    `);
+  </script>
+</body>
+
+</html>

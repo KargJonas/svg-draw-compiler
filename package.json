@@ -1,0 +1,17 @@
+{
+  "name": "svg-lang",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.01.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c --watch",
+    "test": "nodemon test.01.js"
+  },
+  "author": "Jonas Karg",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "rollup": "^1.0.1"
+  }
+}
