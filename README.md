@@ -7,7 +7,7 @@
 
 ## Example:
 
-```basic
+```
 line 0 100 300 100
 line 0 200 300 200
 line 100 0 100 300
