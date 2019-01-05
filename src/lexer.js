@@ -1,7 +1,6 @@
 function Lexer(input) {
   let rawTokens = input
-    .split(/\s/)
-    .filter(token => token.trim());
+    .split(/(\s)/)
 
   const tokens = [];
   let line = 1;
@@ -21,9 +20,9 @@ function Lexer(input) {
     }
 
     // Eliminating whitespace
-    // if (/\s/.test(token)) {
-    //   continue;
-    // }
+    if (!token.trim()) {
+      continue;
+    }
 
     // Classifying all other tokens
     if (/^[0-9]*\.{0,1}[0-9]+$/.test(token)) {
